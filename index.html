@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Markiss Zer</title>
+  <meta name="description"
+    content="WDD 131 – Dynamic Web Fundamentals - Markiss Zer - Course landing page showcasing web development projects, assignments, and resources.">
+  <meta name="author" content="Markiss Zer">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="styles/base.css">
+
+  <!-- JavaScript with defer -->
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+        target="_blank">Scripture</a>
+      <a href="#" target="_blank">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Mardoche Lunganga</h1>
+
+    <div class="card-grid">
+      <!-- First Card: About Me -->
+      <section class="card">
+        <h2>About Me</h2>
+        <div class="card-content">
+          <p>Hello! My name is Mardoche. I am studying software development through BYU-Pathway. I enjoy building clean,
+            functional web applications, learning new programming languages, and solving technical challenges.</p>
+          <img src="images/profile.jpg" alt="Profile photo of Mardoche" width="150" height="150">
+        </div>
+        <section class="sub-section">
+          <h3>Pretoria, South Africa</h3>
+          <div class="sub-content">
+            <img src="images/flag.jpg" alt="South African Flag" width="80" height="50">
+            <p>Pretoria is one of South Africa's capital cities, known for its vibrant purple Jacaranda trees blooming
+              in spring and rich historical architecture.</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Second Card: Web Dev Resources -->
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+          <li><a href="https://picsum.photos" target="_blank">Lorem Ipsum Image Placeholder</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Markiss Zer | Pretoria, South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
