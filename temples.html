@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Temple Album – Markiss Zer</title>
+  <meta name="description"
+    content="WDD 131 - Temple Album assignment showcasing responsive layouts, CSS Grid, Flexbox, and JavaScript interactivity.">
+  <meta name="author" content="Markiss Zer">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets (Mobile-first order) -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- JavaScript with defer -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Temple Album</h1>
+      <button id="menu" aria-label="Open Navigation Menu"></button>
+    </div>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <div class="res-grid">
+      <figure>
+        <img src="images/temple.jpg" alt="San Diego California Temple" loading="lazy">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Salt Lake Temple" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Rome Italy Temple" loading="lazy">
+        <figcaption>Rome Italy</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Johannesburg South Africa Temple" loading="lazy">
+        <figcaption>Johannesburg South Africa</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Tokyo Japan Temple" loading="lazy">
+        <figcaption>Tokyo Japan</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Paris France Temple" loading="lazy">
+        <figcaption>Paris France</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Sydney Australia Temple" loading="lazy">
+        <figcaption>Sydney Australia</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Lima Peru Temple" loading="lazy">
+        <figcaption>Lima Peru</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Accra Ghana Temple" loading="lazy">
+        <figcaption>Accra Ghana</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Markiss Zer | Pretoria, South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

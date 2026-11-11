@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+
+  /* Hide the hamburger button on larger screens */
+  #menu {
+    display: none;
+  }
+
+  /* Header adjustments for desktop */
+  .header-container {
+    padding: 1rem 2rem;
+  }
+
+  /* Always display navigation horizontally via Flexbox */
+  nav.navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #1e293b;
+    padding-right: 1.5rem;
+  }
+
+  nav.navigation a {
+    padding: 0.75rem 1.25rem;
+  }
+
+  /* Change main photo album grid to 3 columns */
+  .res-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
