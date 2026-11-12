@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+
+  /* Side-by-side card layout on wider screens matching wireframes */
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  /* Hide the SVG icon in wider view */
+  .weather-icon-container {
+    display: none;
+  }
+
+  /* Requirement: Use a pseudo-element for the weather icon in large view after the heading "Weather" */
+  .weather-card h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+  }
+}

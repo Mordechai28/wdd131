@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Country Page – Madagascar – Mardoche Lunganga</title>
+  <meta name="description"
+    content="WDD 131 Country Page assignment featuring Madagascar, responsive layout, CSS variables, and wind chill JavaScript calculation.">
+  <meta name="author" content="Mardoche Lunganga">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+
+  <!-- JavaScript with defer -->
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Madagascar</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <!-- Responsive WebP Image using srcset -->
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/madagascar-large.webp">
+        <img src="images/madagascar-medium.webp" alt="Lemur in Madagascar" width="1000" height="667" loading="lazy">
+      </picture>
+    </div>
+
+    <div class="content-container">
+      <section class="card data-card">
+        <h2>Data</h2>
+        <ul class="data-list">
+          <li><span class="label">Area:</span> <span class="value">587,041 sq km</span></li>
+          <li><span class="label">Population:</span> <span class="value">27,691,018</span></li>
+          <li><span class="label">Capital:</span> <span class="value">Antananarivo</span></li>
+          <li><span class="label">Languages:</span> <span class="value">Malagasy, French</span></li>
+          <li><span class="label">Currency:</span> <span class="value">Malagasy Ariary</span></li>
+          <li><span class="label">Time Zone:</span> <span class="value">UTC+3</span></li>
+          <li><span class="label">Calling Code:</span> <span class="value">+261</span></li>
+          <li><span class="label">Internet TLD:</span> <span class="value">.mg</span></li>
+        </ul>
+      </section>
+
+      <section class="card weather-card">
+        <h2>Weather</h2>
+        <div class="weather-icon-container">
+          <!-- SVG Weather Icon for Mobile view -->
+          <svg class="weather-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"
+            aria-label="Partly Cloudy Icon">
+            <path fill="#f59e0b" d="M30 18a10 10 0 1 1-10-10 10 10 0 0 1 10 10z" />
+            <path fill="#94a3b8"
+              d="M46 32a12 12 0 0 0-22.1-6.5A10 10 0 0 0 14 34a10 10 0 0 0 10 10h22a10 10 0 0 0 0-20z" />
+          </svg>
+        </div>
+        <ul class="data-list">
+          <li><span class="label">Temperature:</span> <span id="temp" class="value">10 °C</span></li>
+          <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+          <li><span class="label">Wind:</span> <span id="wind" class="value">5 km/h</span></li>
+          <li><span class="label">Wind Chill:</span> <span id="chill" class="value">0</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Markiss Zer | Pretoria, South Africa</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
