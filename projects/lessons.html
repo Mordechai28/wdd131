@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons | ZER KEYZ Academy</title>
+  <meta name="description"
+    content="Browse filterable piano and keyboard lessons by category and track completed practice modules at ZER KEYZ Academy.">
+  <meta name="author" content="Mardoche Lunganga">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/lessons.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">ZER KEYZ Academy</a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false"
+        aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="lessons.html" class="active" aria-current="page">Lessons</a>
+        <a href="enroll.html">Enroll &amp; Practice</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Piano &amp; Keyboard Lessons</h1>
+      <p id="progress-summary">Filter lessons by focus area and mark modules complete as you practice.</p>
+      <div class="filter-bar" role="group" aria-label="Filter lessons by category">
+        <button type="button" class="filter-btn active" data-category="All">All</button>
+        <button type="button" class="filter-btn" data-category="Technique">Technique</button>
+        <button type="button" class="filter-btn" data-category="Chords">Chords</button>
+        <button type="button" class="filter-btn" data-category="Rhythm">Rhythm</button>
+      </div>
+    </section>
+
+    <section aria-labelledby="catalog-heading">
+      <h2 id="catalog-heading" class="visually-hidden">Lesson Catalog</h2>
+      <div id="lessons-grid" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> ZER KEYZ Academy | Pretoria, South Africa</p>
+    <p id="last-modified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll &amp; Practice Plan | ZER KEYZ Academy</title>
+  <meta name="description"
+    content="Enroll at ZER KEYZ Academy and save a personalized weekly piano or keyboard practice routine.">
+  <meta name="author" content="Mardoche Lunganga">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/enroll.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">ZER KEYZ Academy</a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false"
+        aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="enroll.html" class="active" aria-current="page">Enroll &amp; Practice</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Student Enrollment &amp; Practice Plan</h1>
+      <p>Create a weekly practice schedule and save your learning goals directly in your browser.</p>
+    </section>
+
+    <section class="form-layout" aria-labelledby="form-heading">
+      <form id="practice-form" class="academy-form" novalidate>
+        <h2 id="form-heading">Build Your Practice Routine</h2>
+
+        <div class="form-group">
+          <label for="student-name">Full Name</label>
+          <input id="student-name" name="studentName" type="text" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="student-email">Email Address</label>
+          <input id="student-email" name="studentEmail" type="email" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="skill-level">Current Experience Level</label>
+          <select id="skill-level" name="skillLevel" required>
+            <option value="">Select a level</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Returning Player">Returning Player</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="minutes-per-day">Daily Practice Target (Minutes)</label>
+          <input id="minutes-per-day" name="minutesPerDay" type="number" min="10" max="180" value="30" required>
+        </div>
+
+        <div class="form-group">
+          <label for="practice-notes">Primary Musical Goal</label>
+          <textarea id="practice-notes" name="practiceNotes" rows="3"
+            placeholder="Example: Play major chords smoothly and keep steady timing"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Practice Plan</button>
+        <p id="form-feedback" class="feedback-msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside id="saved-plans-section" class="info-card" aria-labelledby="saved-heading">
+        <h2 id="saved-heading">Saved Practice Plans</h2>
+        <div id="saved-plans-list"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> ZER KEYZ Academy | Pretoria, South Africa</p>
+    <p id="last-modified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+
+</html>

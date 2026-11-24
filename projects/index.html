@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZER KEYZ Academy | Piano &amp; Keyboard Learning</title>
+  <meta name="description"
+    content="Learn piano fundamentals, chords, keyboard voicings, and practice routines with ZER KEYZ Academy.">
+  <meta name="author" content="Mardoche Lunganga">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">ZER KEYZ Academy</a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false"
+        aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main Navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="enroll.html">Enroll &amp; Practice</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Build Confidence at the Keys</h1>
+        <p>Structured piano and keyboard lessons covering finger technique, chord progressions, rhythm, and expressive
+          performance.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="lessons.html">Explore Lessons</a>
+          <a class="btn btn-secondary" href="enroll.html">Start Practice Plan</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero-keys.webp" alt="Piano and keyboard keys prepared for a practice session" width="800"
+          height="500">
+      </div>
+    </section>
+
+    <section class="tracks-section" aria-labelledby="tracks-heading">
+      <h2 id="tracks-heading">Core Learning Tracks</h2>
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>Foundations &amp; Posture</h3>
+          <p>Develop relaxed hand positioning, clean finger independence, and steady tempo from day one.</p>
+        </article>
+        <article class="info-card">
+          <h3>Chords &amp; Voicings</h3>
+          <p>Move beyond basic triads into smooth inversions, progressions, and accompaniment patterns.</p>
+        </article>
+        <article class="info-card">
+          <h3>Keyboard &amp; Synth Sound</h3>
+          <p>Shape tone, dynamics, and layered keyboard textures for expressive playing and arrangement.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <div class="section-header">
+        <h2 id="featured-heading">Featured Lessons</h2>
+        <a href="lessons.html" class="text-link">View all lessons &rarr;</a>
+      </div>
+      <div id="featured-lessons" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> ZER KEYZ Academy | Pretoria, South Africa</p>
+    <p id="last-modified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+
+</html>
