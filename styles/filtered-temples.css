@@ -1,0 +1,176 @@
+/* Base & Mobile-First Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Hamburger Menu */
+header {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+#menu {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+/* Navigation Menu */
+header {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#menu,
+#menu-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.25rem 0.6rem;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  background-color: #1e293b;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #2563eb;
+}
+
+/* Main Content & Temple Grid */
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+main h1,
+main h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.temple-card {
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.temple-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 0.75rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: #fcd34d;
+}
